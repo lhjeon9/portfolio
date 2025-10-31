@@ -1,0 +1,78 @@
+@charset "UTF-8";
+
+:root {
+  --bg-img: url("../img/body_background.png") no-repeat center top / cover;
+  --white-color: #fff;
+  --page-title: #f40f6b;
+  --con-title: #222;
+  --page-contens: #333;
+  --sub-menu-underbar: #eee;
+  --sub-menu-underbar-active: #433438;
+}
+
+body {
+  background: var(--bg-img);
+}
+
+.gnb {
+  width: 1400px;
+  height: 100px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin: 0 260px;
+}
+
+.gnb li {
+  list-style: none;
+  line-height: 1.6;
+  margin: auto;
+}
+
+.gnb a {
+  text-decoration: none;
+
+  font-size: 50px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.home-title {
+  width: 100%;
+  height: 300px;
+  padding: 10px;
+
+  position: absolute;
+  top: 350px;
+  left: 50px;
+}
+
+.home-title h1 {
+  font-weight: 900;
+  font-size: 80px;
+  color: #000;
+
+  display: flex;
+}
+
+.home-title h2 {
+  font-weight: 800;
+  font-size: 70px;
+  color: #000;
+
+  display: flex;
+  margin-top: 20px;
+}
+
+.ABOUT-ME {
+  width: 100%;
+}
+
+.ABOUT-ME h1 {
+  font-weight: 700;
+  font-size: 100px;
+  color: #f40f6b;
+  margin: 60px;
+}

@@ -1,0 +1,64 @@
+아래 Figma 스타일 가이드를 따라서 시안을 이미지로 시각화해줘.
+
+
+# Figma Style Guide — Main Hero (Glass Overlay Concept)
+
+## 🎨 Color Palette
+
+* Background Gradient: Soft Pink → Lavender
+* Glass Panel Fill: White 30% opacity
+* Shadow: Soft pastel purple glow
+* Accent: Subtle warm peach
+
+## 🖋 Typography
+
+**Heading (EN)**
+
+* Font: Playfair Display
+* Weight: Regular / Semi-Bold
+* Size: 64px
+* Letter spacing: +1%
+* Line height: 125%
+
+**Subheading (KR)**
+
+* Font: Pretendard / Weight: 300
+* Size: 20px
+* Opacity: 80%
+* Line height: 150%
+
+## 📦 Glass Card Style
+
+* Width: Auto / Max 50%
+* Padding: 48px top/bottom, 56px sides
+* Border radius: 20px
+* Fill: rgba(255,255,255,0.3)
+* Blur: 20px
+* Border: 1px solid rgba(255,255,255,0.4)
+* Shadow: soft pastel glow
+
+## ✨ Motion & Micro Interaction
+
+* Fade-in + slight blur to clear (duration 0.8s)
+* Subtle float animation (Y: 2–4px) slow
+* Hover on card: +4px lift, softer shadow
+
+## 📏 Layout
+
+* Card centered horizontally & vertically
+* Outer margin: generous whitespace (airiness)
+* Text stacking: EN → KR with 12px gap
+* Divider element between 2 copies (thin line or dot)
+
+## 💡 Visual Accents
+
+* Slight sparkle textures or soft grain
+* Tiny dots or soft glow as accent
+
+## ✍️ Hero Text
+
+**Where details become experiences.**
+디테일이 경험이 됩니다.
+
+**Kind and intuitive design.**
+친절하고 직관적인 디자인.

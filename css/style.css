@@ -14,7 +14,15 @@ body {
   background: var(--bg-img);
 }
 
+.main {
+  position: relative;
+
+  width: 100vh;
+  height: 100vh;
+}
+
 .gnb {
+  position: absolute;
   width: 1400px;
   height: 100px;
 
@@ -50,6 +58,8 @@ body {
 }
 
 .home-title h1 {
+  width: 100%;
+
   font-weight: 900;
   font-size: 80px;
   color: #000;
@@ -66,13 +76,124 @@ body {
   margin-top: 20px;
 }
 
-.ABOUT-ME {
+.about-me {
   width: 100%;
 }
 
-.ABOUT-ME h1 {
+.about-me h1 {
   font-weight: 700;
   font-size: 100px;
   color: #f40f6b;
   margin: 60px;
+}
+
+.skills ol {
+  display: flex;
+}
+
+.skills ol > li > figure > img {
+  width: 50px;
+  height: 50px;
+
+  display: inline-block;
+}
+
+.portfolio {
+  width: 1400px;
+  margin: 200px auto 0;
+}
+
+.portfolio h2 {
+  font-size: 120px;
+  font-weight: 700;
+  color: var(--page-title);
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.portfolio ol {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 60px;
+  border-bottom: 2px solid var(--sub-menu-underbar);
+}
+
+.portfolio ol li {
+  font-size: 18px;
+  padding: 15px 20px;
+  cursor: pointer;
+  color: var(--page-contens);
+  border-bottom: 3px solid transparent;
+  transition: all 0.3s;
+}
+
+.portfolio ol li.active {
+  color: var(--con-title);
+  font-weight: 700;
+  border-bottom: 3px solid var(--sub-menu-underbar-active);
+}
+
+.portfolio-content {
+  display: flex;
+  gap: 75px;
+  align-items: flex-start;
+}
+
+.portfolio-image {
+  width: 740px;
+  height: auto;
+  background: #00aced;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.portfolio-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.portfolio-desc {
+  flex: 1;
+}
+
+.portfolio-desc h3 {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--con-title);
+  margin-bottom: 30px;
+}
+
+.portfolio-desc .site-name {
+  font-size: 20px;
+  color: var(--page-contens);
+  margin-bottom: 15px;
+}
+
+.portfolio-desc .duration {
+  font-size: 20px;
+  color: var(--page-contens);
+  margin-bottom: 60px;
+}
+
+.portfolio-desc h4 {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--con-title);
+  margin-bottom: 20px;
+}
+
+.portfolio-desc .tools {
+  font-size: 20px;
+  color: var(--page-contens);
+}
+
+.content-item {
+  display: none;
+}
+
+.content-item.active {
+  display: flex;
 }

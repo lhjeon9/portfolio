@@ -14,10 +14,16 @@ body {
   background: var(--bg-img);
 }
 
+/* 가로 스크롤 제거 */
+html,
+body {
+  overflow-x: hidden;
+}
+
 .main {
   position: relative;
 
-  width: 100vh;
+  width: 100vw;
   height: 100vh;
 }
 
@@ -55,16 +61,14 @@ body {
   position: absolute;
   top: 350px;
   left: 50px;
+  display: flex;
+  flex-direction: column;
 }
 
 .home-title h1 {
-  width: 100%;
-
   font-weight: 900;
   font-size: 80px;
   color: #000;
-
-  display: flex;
 }
 
 .home-title h2 {
@@ -76,6 +80,49 @@ body {
   margin-top: 20px;
 }
 
+/* Scroll Down 텍스트와 화살표 */
+.scroll-down {
+  position: absolute;
+  bottom: 40px;
+  left: 0;
+  right: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+
+  color: var(--page-title);
+
+  animation: bounce 1.5s infinite ease-in-out;
+}
+
+.scroll-down p {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1;
+  margin: 0;
+  color: var(--page-title);
+}
+
+.scroll-down img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
+/* 아래로 움직이는 애니메이션 */
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(6px);
+  }
+}
+
+
 .about-me {
   width: 100%;
 }
@@ -85,6 +132,16 @@ body {
   font-size: 100px;
   color: #f40f6b;
   margin: 60px;
+}
+
+.about-me figure {
+  margin: 0 0 0 auto;
+}
+
+.about-me img {
+  vertical-align: top;
+  width: 40%;
+  height: 100%;
 }
 
 .skills ol {

@@ -6,179 +6,33 @@
     <title>포트폴리오</title>
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/style.css" />
-    
+
     <script src="./js/jquery-3.7.1.min.js"></script>
     <script src="./js/script.js"></script>
   </head>
   <body>
     <section class="main">
       <!-- .gnb>(li>a)*5 -->
-      
-        <ul class="gnb">
-          <li><a href="home-title">Home</a></li>
-          <li><a href="ABOUT ME">About Me</a></li>
-          <li><a href="#">Portfolio</a></li>
-          <li><a href="#">Design</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-     
+
+      <ul class="gnb">
+        <li><a href="home-title">Home</a></li>
+        <li><a href="about-me ME">About Me</a></li>
+        <li><a href="portfolio">Portfolio</a></li>
+        <li><a href="design">Design</a></li>
+        <li><a href="contact">Contact</a></li>
+      </ul>
+
       <div class="home-title">
         <h1>Where details become experiences</h1>
         <h2>디테일을 경험으로</h2>
       </div>
-      <!-- <div class="scroll-down">
-            <span>Scroll Down</span>
-            <div class="arrow"></div> -->
-    </section>
 
-    <section class="about-me">
-      <h1>About Me</h1>
-      <figure><img src="./img/profile.png" alt="" /></figure>
-      
-        <ol class="profile">
-          <li>이름 :이희정</li>
-          <li>나이 : 만 26세</li>
-          <li>학력 : 강원대학교 글로벌인재학부 영어전공(졸업)</li>
-          <li>
-            수료내역 : 2025.06 ~ 2025.11 하이미디어 아카데미 구로캠퍼스
-            피그마(Figma) 활용 UI/UX 웹디자인&웹퍼블리셔 과정 수료
-          </li>
-        </ol>
-      
-      <!-- div.SKILLS>h3+(li>fig>img)*8 -->
-      <div class="skills">
-        <h3>SKILLS</h3>
-        <ol>
-          <li>
-            <figure><img src="./img/ico-html5.png" alt="" /></figure>
-          </li>
-          <li>
-            <figure><img src="./img/ico-css3.png" alt="" /></figure>
-          </li>
-          <li>
-            <figure><img src="./img/ico-JavaScript.png" alt="" /></figure>
-          </li>
-          <li>
-            <figure><img src="./img/ico-jquery.png" alt="" /></figure>
-          </li>
-          <li>
-            <figure><img src="./img/ico-VS Code.png" alt="" /></figure>
-          </li>
-          <li>
-            <figure><img src="./img/ico=Photoshop.png" alt="" /></figure>
-          </li>
-          <li>
-            <figure><img src="./img/ico-Illustrator.png" alt="" /></figure>
-          </li>
-          <li>
-            <figure><img src="./img/ico-Figma.png" alt="" /></figure>
-          </li>
-        </ol>
+      <div class="scroll-down">
+        <p>Scroll Down</p>
+        <div class="arrow">
+          <img src="./img/scroll-down.png" alt="scroll arrow" />
+        </div>
       </div>
     </section>
-
-    <section class="portfolio">
-      <h2>Portfolio</h2>
-
-      <ol>
-        <li><a href="#">작업한 페이지 1</a></li>
-        <li><a href="#">작업한 페이지 2</a></li>
-        <li><a href="#">작업한 페이지 3</a></li>
-      </ol>
-
-       <div class="portfolio-content">
-      <div class="content-item active" data-content="1">
-        <div class="portfolio-image">
-          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='700' height='400'%3E%3Crect fill='%23fff' width='700' height='400'/%3E%3Ctext x='50%25' y='50%25' text-anchor='middle' dy='.3em' fill='%23999' font-size='24'%3E작업물 1 이미지%3C/text%3E%3C/svg%3E" alt="작업물 1">
-        </div>
-        <div class="portfolio-desc">
-          <h3>작업한 페이지 이름</h3>
-          <p class="site-name">사이트 설명</p>
-          <p class="duration">간단히 1~2줄</p>
-          <h4>사용툴</h4>
-          <p class="tools">Photoshop, Visual Studio Code</p>
-        </div>
-      </div>
-
-      <div class="content-item" data-content="2">
-        <div class="portfolio-image">
-          <img src="./img/portfolio-1.png" alt="작업물 2">
-        </div>
-        <div class="portfolio-desc">
-          <h3>작업한 페이지 이름 2</h3>
-          <p class="site-name">사이트 설명 2</p>
-          <p class="duration">간단히 1~2줄</p>
-          <h4>사용툴</h4>
-          <p class="tools">Illustrator, Visual Studio Code</p>
-        </div>
-      </div>
-
-      <div class="content-item" data-content="3">
-        <div class="portfolio-image">
-          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='700' height='400'%3E%3Crect fill='%23fff' width='700' height='400'/%3E%3Ctext x='50%25' y='50%25' text-anchor='middle' dy='.3em' fill='%23999' font-size='24'%3E작업물 3 이미지%3C/text%3E%3C/svg%3E" alt="작업물 3">
-        </div>
-        <div class="portfolio-desc">
-          <h3>작업한 페이지 이름 3</h3>
-          <p class="site-name">사이트 설명 3</p>
-          <p class="duration">간단히 1~2줄</p>
-          <h4>사용툴</h4>
-          <p class="tools">Figma, React</p>
-        </div>
-      </div>
-
-      <!-- <div class="not-active">
-        <div class="content-item" data-content="4">
-          <div class="portfolio-image">
-            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='700' height='400'%3E%3Crect fill='%23fff' width='700' height='400'/%3E%3Ctext x='50%25' y='50%25' text-anchor='middle' dy='.3em' fill='%23999' font-size='24'%3E작업물 4 이미지%3C/text%3E%3C/svg%3E" alt="작업물 4">
-          </div>
-          <div class="portfolio-desc">
-            <h3>작업한 페이지 이름 4</h3>
-            <p class="site-name">사이트 설명 4</p>
-            <p class="duration">간단히 1~2줄</p>
-            <h4>사용툴</h4>
-            <p class="tools">Photoshop, JavaScript</p>
-          </div>
-        </div>
-        <div class="content-item" data-content="5">
-          <div class="portfolio-image">
-            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='700' height='400'%3E%3Crect fill='%23fff' width='700' height='400'/%3E%3Ctext x='50%25' y='50%25' text-anchor='middle' dy='.3em' fill='%23999' font-size='24'%3E작업물 5 이미지%3C/text%3E%3C/svg%3E" alt="작업물 5">
-          </div>
-          <div class="portfolio-desc">
-            <h3>작업한 페이지 이름 5</h3>
-            <p class="site-name">사이트 설명 5</p>
-            <p class="duration">간단히 1~2줄</p>
-            <h4>사용툴</h4>
-            <p class="tools">Adobe XD, Vue.js</p>
-          </div>
-        </div>
-        <div class="content-item" data-content="6">
-          <div class="portfolio-image">
-            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='700' height='400'%3E%3Crect fill='%23fff' width='700' height='400'/%3E%3Ctext x='50%25' y='50%25' text-anchor='middle' dy='.3em' fill='%23999' font-size='24'%3E작업물 6 이미지%3C/text%3E%3C/svg%3E" alt="작업물 6">
-          </div>
-          <div class="portfolio-desc">
-            <h3>작업한 페이지 이름 6</h3>
-            <p class="site-name">사이트 설명 6</p>
-            <p class="duration">간단히 1~2줄</p>
-            <h4>사용툴</h4>
-            <p class="tools">Sketch, TypeScript</p>
-          </div>
-        </div>
-        <div class="content-item" data-content="7">
-          <div class="portfolio-image">
-            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='700' height='400'%3E%3Crect fill='%23fff' width='700' height='400'/%3E%3Ctext x='50%25' y='50%25' text-anchor='middle' dy='.3em' fill='%23999' font-size='24'%3E작업물 7 이미지%3C/text%3E%3C/svg%3E" alt="작업물 7">
-          </div>
-          <div class="portfolio-desc">
-            <h3>작업한 페이지 이름 7</h3>
-            <p class="site-name">사이트 설명 7</p>
-            <p class="duration">간단히 1~2줄</p>
-            <h4>사용툴</h4>
-            <p class="tools">Photoshop, Next.js</p>
-          </div>
-        </div>
-      </div> -->
-
-    </section>
-
-     
   </body>
 </html>

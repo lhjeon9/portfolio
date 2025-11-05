@@ -52,9 +52,11 @@ body {
   top: 0;
   left: 50%;
   transform: translateX(-50%);
+
   width: 100%;
   max-width: 1400px;
   height: 100px;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -76,11 +78,11 @@ body {
   font-weight: 700;
   color: #fff;
 
-  transition: opacity 0.3s ease;
+  transition: 0.3s ease;
 }
 
 .gnb a:hover {
-  opacity: 0.8;
+  color: var(--page-title);
 }
 
 .home-title {
@@ -98,6 +100,7 @@ body {
   top: 50%;
   left: 50px;
   transform: translateY(-50%);
+  
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -169,43 +172,3 @@ body {
     transform: translateY(6px);
   }
 }
-
-/* 반응형 디자인 */
-/* @media (max-width: 1024px) {
-  .gnb a {
-    font-size: 32px;
-  }
-  
-  .home-title h1 {
-    font-size: 60px;
-  }
-  
-  .home-title h2 {
-    font-size: 52px;
-  }
-}
-
-@media (max-width: 768px) {
-  .gnb {
-    flex-wrap: wrap;
-    height: auto;
-    padding: 20px;
-  }
-  
-  .gnb a {
-    font-size: 24px;
-  }
-  
-  .home-title {
-    left: 30px;
-    right: 30px;
-  }
-  
-  .home-title h1 {
-    font-size: 40px;
-  }
-  
-  .home-title h2 {
-    font-size: 35px;
-  }
-} */

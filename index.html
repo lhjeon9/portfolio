@@ -67,5 +67,41 @@
         <img class="profile-image" src="./img/profile.png" alt="Profile" />
       </div>
     </section>
+
+    <!-- section.portfolio>h1+(ul>li.tab{작업한페이지$}*7) -->
+    <section class="portfolio">
+      <h1>Portfolio</h1>
+      <ul>
+        <li class="tab">작업한페이지1</li>
+        <li class="tab">작업한페이지2</li>
+        <li class="tab">작업한페이지3</li>
+        <li class="tab">작업한페이지4</li>
+        <li class="tab">작업한페이지5</li>
+        <li class="tab">작업한페이지6</li>
+        <li class="tab">작업한페이지7</li>
+      </ul>
+
+      <!-- div.portfolio-content>div.content-item>(div.portfolio-image>img)+(dl>dt+dd)*2 -->
+      <div class="portfolio-content">
+        <div class="content-item">
+          <div class="portfolio-image">
+            <img src="./img/portfolio-1.png" alt="" />
+          </div>
+          <div class="portfolio-text">
+            <dl>
+              <dt>작업한 페이지 이름</dt>
+              <dd>
+                사이트 설명<br />
+                간단히 1~2줄
+              </dd>
+            </dl>
+            <dl>
+              <dt>사용툴</dt>
+              <dd>Photoshop, Visual Studio Code</dd>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>

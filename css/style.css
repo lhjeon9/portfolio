@@ -21,7 +21,7 @@
 
 body {
   background: var(--bg-img);
-  font-family: var(--font-pretendard);
+  font-family: var(--font-gowun);
 }
 
 /* 가로 스크롤 제거 */
@@ -125,7 +125,7 @@ h1 {
 }
 
 .home-title h2 {
-  font-family: var(--font-pretendard);
+  /* font-family: var(--font-pretendard); */
   line-height: 1.2;
   margin: 0;
 
@@ -256,3 +256,152 @@ h1 {
   object-fit: cover;
   filter: grayscale(100%);
 }
+
+/* Portfolio Section */
+
+.portfolio {
+  width: 100%;
+  min-height: 100vh;
+  padding: 100px 80px;
+
+  margin-top: 200px;
+
+  display: block;
+}
+
+.portfolio h1 {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.portfolio ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+
+  /* 최대 너비 설정 */
+  max-width: 1400px;
+  margin: 0 auto 80px;
+  padding-bottom: 15px;
+
+  border-bottom: 3px solid var(--sub-menu-underbar);
+}
+
+.portfolio ul li {
+  font-family: var(--font-gowun);
+  font-weight: 500;
+  font-size: 20px;
+
+  padding: 10px 20px;
+  cursor: pointer;
+  color: var(--con-title);
+
+  cursor: pointer;
+  position: relative;
+  /* border: 1px solid #000; */
+
+  transition: all 0.5s ease;
+}
+
+.portfolio ul li:hover {
+  font-family: var(--font-gowun);
+  font-weight: 700;
+
+  /* transform: scale(1.05); */
+  cursor: pointer;
+  color: var(--con-title);
+}
+
+.portfolio ul li::after {
+  content: "";
+  position: absolute;
+  bottom: -18px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0%;
+  height: 4px;
+  background: var(--sub-menu-underbar-active);
+
+  z-index: 1;
+  transition: 0.4s;
+}
+
+.portfolio ul li:hover::after {
+  width: 110%;
+}
+
+/* Portfolio Content */
+.portfolio-content {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.content-item {
+  display: flex;
+  gap: 50px;
+
+  justify-content: center;
+  align-items: center;
+}
+
+/* Portfolio Image */
+.portfolio-image {
+  height: 450px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.portfolio-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Portfolio Text */
+.portfolio-text {
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+  margin-bottom: 120px;
+
+  width: 600px;
+}
+
+.portfolio-text dl {
+  margin: 0;
+  text-align: center;
+}
+
+.portfolio-text dt {
+  font-family: var(--font-gowun);
+  font-weight: 600;
+  font-size: 30px;
+  color: var(--con-title);
+  margin-bottom: 15px;
+}
+
+.portfolio-text dd {
+  font-family: var(--font-gowun);
+  font-size: 24px;
+  color: var(--page-contens);
+  line-height: 1.6;
+  margin: 0;
+}
+
+.portfolio-text dl:last-child {
+  font-family: var(--font-raleway);
+}
+
+/* 첫 번째 dl - 중앙 정렬 */
+/* .portfolio-text dl{
+  text-align: center;
+} */
+/* .portfolio-text dl:first-child {
+  text-align: center;
+} */
+
+/* 두 번째 dl - 왼쪽 정렬 */
+/* .portfolio-text dl:last-child {
+  text-align: left;
+}  */

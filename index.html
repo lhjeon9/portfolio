@@ -11,9 +11,9 @@
     <script src="./js/script.js"></script>
   </head>
   <body>
-    <section class="main">
-      <!-- .gnb>(li>a)*5 -->
-
+    <!-- 고정 GNB -->
+    <!-- .gnb>(li>a)*5 -->
+    <nav class="gnb-fixed">
       <ul class="gnb">
         <li><a href="#main">Home</a></li>
         <li><a href="#about-me">About Me</a></li>
@@ -21,7 +21,9 @@
         <li><a href="#design">Design</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
+    </nav>
 
+    <section class="main" id="main">
       <div class="home-title">
         <h1>Where details become experiences</h1>
         <h2>디테일을 경험으로</h2>
@@ -36,7 +38,7 @@
     </section>
 
     <!-- section.about-me>(div.info>h1+p*4)+(div.skill>h2+div.skill-icons>img*8) -->
-    <section class="about-me">
+    <section class="about-me" id="about-me">
       <div class="left-section">
         <div class="info">
           <h1>About Me</h1>
@@ -69,7 +71,7 @@
     </section>
 
     <!-- section.portfolio>h1+(ul>li.tab{작업한페이지$}*7) -->
-    <section class="portfolio">
+    <section class="portfolio" id="portfolio">
       <h1>Portfolio</h1>
       <ul>
         <li class="tab">작업한페이지1</li>
@@ -105,7 +107,7 @@
     </section>
 
     <!-- section.design>h1+fig>img*4 -->
-    <section class="design">
+    <section class="design" id="design">
       <h1>Design</h1>
       <div class="design-img">
         <figure>
@@ -118,7 +120,7 @@
       </div>
     </section>
 
-    <section class="contact">
+    <section class="contact" id="contact">
       <h1>Contact</h1>
       <div class="contact-text">
         <p>Hee-Jeong LEE</p>

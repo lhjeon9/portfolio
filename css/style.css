@@ -136,7 +136,7 @@ h1 {
 
   font-weight: 900;
   font-size: 80px;
-  color: var(--black-color);
+  color: var(--page-title);
 }
 
 .home-title h2 {
@@ -145,7 +145,7 @@ h1 {
   margin: 0;
 
   font-weight: 800;
-  font-size: 70px;
+  font-size: 40px;
   color: var(--black-color);
 }
 
@@ -298,45 +298,34 @@ h1 {
   margin-bottom: 60px;
 }
 
-.portfolio ul {
+/* Portfolio Tabs */
+.portfolio-tabs {
   list-style: none;
   display: flex;
   justify-content: space-between;
-
-  /* 최대 너비 설정 */
   max-width: 1400px;
   margin: 0 auto 80px;
   padding-bottom: 15px;
-
   border-bottom: 3px solid var(--sub-menu-underbar);
 }
 
-.portfolio ul li {
+.portfolio-tabs li {
   font-family: var(--font-gowun);
   font-weight: 500;
   font-size: 20px;
-
   padding: 10px 20px;
   cursor: pointer;
   color: var(--con-title);
-
-  cursor: pointer;
   position: relative;
-  /* border: 1px solid #000; */
-
   transition: all 0.5s ease;
 }
 
-.portfolio ul li:hover {
-  font-family: var(--font-gowun);
+.portfolio-tabs li:hover {
   font-weight: 700;
-
-  /* transform: scale(1.05); */
-  cursor: pointer;
   color: var(--con-title);
 }
 
-.portfolio ul li::after {
+.portfolio-tabs li::after {
   content: "";
   position: absolute;
   bottom: -18px;
@@ -345,13 +334,19 @@ h1 {
   width: 0%;
   height: 4px;
   background: var(--sub-menu-underbar-active);
-
   z-index: 1;
   transition: 0.4s;
 }
 
-.portfolio ul li:hover::after {
+.portfolio-tabs li:hover::after,
+.portfolio-tabs li.active::after {
   width: 110%;
+}
+
+/* 활성화된 탭 스타일 */
+.portfolio-tabs li.active {
+  font-weight: 700;
+  color: var(--page-title);
 }
 
 /* Portfolio Content */
@@ -359,6 +354,25 @@ h1 {
   width: 100%;
   max-width: 1400px;
   margin: 0 auto;
+  display: none;
+  opacity: 0;
+}
+
+/* 활성화된 콘텐츠 */
+.portfolio-content.active {
+  display: block;
+  animation: fadeIn 0.6s ease forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .content-item {
@@ -374,6 +388,12 @@ h1 {
   height: 450px;
   border-radius: 10px;
   overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.portfolio-image:hover {
+  transform: scale(1.02);
 }
 
 .portfolio-image img {
@@ -437,7 +457,6 @@ h1 {
   width: 100%;
   min-height: 100vh;
   padding: 100px 80px;
-
   margin-top: 200px;
 
   display: block;
@@ -448,22 +467,108 @@ h1 {
   margin-bottom: 60px;
 }
 
-.design-img {
-  margin-top: 150px;
-}
-
-.design figure {
-  width: 500px;
-  height: 500px;
-
+/* 슬라이더 컨테이너 */
+.design-slider-container {
+  position: relative;
+  max-width: 1400px;
+  margin: -150px auto 0;
   display: flex;
+  align-items: center;
   gap: 30px;
 }
 
-.design img {
+/* 슬라이더 영역 */
+.design-img {
+  margin-top: 150px;
+
+  flex: 1;
+  overflow: hidden;
+  position: relative;
+}
+
+.design-slider {
+  display: flex;
+  gap: 30px;
+  transition: transform 0.5s ease;
+  margin: 0;
+}
+
+/* 각 슬라이드 아이템 */
+.slide-item {
+  min-width: 500px;
+  height: 600px;
+  flex-shrink: 0;
+}
+
+.slide-item img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* 슬라이더 버튼 */
+.slider-btn {
+  width: 50px;
+  height: 50px;
+  border: none;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  color: var(--page-title);
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+}
+
+.slider-btn:hover {
+  background: var(--page-title);
+  color: var(--white-color);
+  transform: scale(1.1);
+}
+
+.slider-btn:active {
+  transform: scale(0.95);
+}
+
+.prev-btn {
+  margin-right: -25px;
+}
+
+.next-btn {
+  margin-left: -25px;
+}
+
+/* 슬라이드 인디케이터 (dots) */
+.slider-dots {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 40px;
+}
+
+.slider-dots .dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: rgba(244, 15, 107, 0.3);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.slider-dots .dot.active {
+  background: var(--page-title);
+  width: 30px;
+  border-radius: 6px;
+}
+
+.slider-dots .dot:hover {
+  background: rgba(244, 15, 107, 0.6);
 }
 
 /* contact Section */

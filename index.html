@@ -44,7 +44,7 @@
           <h1>About Me</h1>
           <p>이름 :이희정</p>
           <p>나이 : 만 26세</p>
-          <!-- <p>학력 : 강원대학교 글로벌인재학부 영어전공(졸업)</p> -->
+          <p>학력 : 강원대학교 글로벌인재학부 영어전공(졸업)</p>
           <p>
             수료내역 : 2025.06 ~ 2025.11 하이미디어 아카데미 구로캠퍼스<br />
             피그마(Figma) 활용 UI/UX 웹디자인&웹퍼블리셔 과정 수료
@@ -58,7 +58,7 @@
             <img src="./img/ico-JavaScript.png" alt="JavaScript" />
             <img src="./img/ico-jquery.png" alt="jQuery" />
             <img src="./img/ico-VS Code.png" alt="VS Code" />
-            <img src="./img/ico-VS Code.png" alt="Photoshop" />
+            <img src="./img/ico=Photoshop.png" alt="Photoshop" />
             <img src="./img/ico-Illustrator.png" alt="Illustrator" />
             <img src="./img/ico-Figma.png" alt="Figma" />
           </div>
@@ -73,25 +73,67 @@
     <!-- section.portfolio>h1+(ul>li.tab{작업한페이지$}*7) -->
     <section class="portfolio" id="portfolio">
       <h1>Portfolio</h1>
-      <ul>
-        <li class="tab">작업한페이지1</li>
-        <li class="tab">작업한페이지2</li>
-        <li class="tab">작업한페이지3</li>
-        <li class="tab">작업한페이지4</li>
-        <li class="tab">작업한페이지5</li>
-        <li class="tab">작업한페이지6</li>
-        <li class="tab">작업한페이지7</li>
+      <ul class="portfolio-tabs">
+        <li class="tab active" data-tab="1">작업한페이지1</li>
+        <li class="tab" data-tab="2">작업한페이지2</li>
+        <li class="tab" data-tab="3">작업한페이지3</li>
+        <li class="tab" data-tab="4">작업한페이지4</li>
+        <li class="tab" data-tab="5">작업한페이지5</li>
+        <li class="tab" data-tab="6">작업한페이지6</li>
+        <li class="tab" data-tab="7">작업한페이지7</li>
       </ul>
 
       <!-- div.portfolio-content>div.content-item>(div.portfolio-image>img)+(dl>dt+dd)*2 -->
-      <div class="portfolio-content">
+      <!-- Portfolio Content 1 -->
+      <div class="portfolio-content active" data-content="1">
         <div class="content-item">
           <div class="portfolio-image">
-            <img src="./img/portfolio-1.png" alt="" />
+            <img src="./img/portfolio-1.png" alt="Portfolio 1" />
           </div>
           <div class="portfolio-text">
             <dl>
-              <dt>작업한 페이지 이름</dt>
+              <dt>상식팡</dt>
+              <dd>
+                앱 서비스 기획 및 디자인<br />
+                게이미피케이션 기반 상식 학습 앱
+              </dd>
+            </dl>
+            <dl>
+              <dt>사용툴</dt>
+              <dd>Figma, Photoshop, Illustrator, Chat GPT</dd>
+            </dl>
+          </div>
+        </div>
+      </div>
+
+      <!-- Portfolio Content 2 -->
+      <div class="portfolio-content" data-content="2">
+        <div class="content-item">
+          <div class="portfolio-image">
+            <img src="./img/portfolio-2.png" alt="Portfolio 2" />
+          </div>
+          <div class="portfolio-text">
+            <dl>
+              <dt>UI/UX 웹디자인 포트폴리오</dt>
+              <dd>UI/UX 웹디자인 포트폴리오용 홈페이지 제작<br /></dd>
+            </dl>
+            <dl>
+              <dt>사용툴</dt>
+              <dd>Figma, VS Code, HTML5, CSS3, JavaScript, jQuery</dd>
+            </dl>
+          </div>
+        </div>
+      </div>
+
+      <!-- Portfolio Content 3 -->
+      <div class="portfolio-content" data-content="3">
+        <div class="content-item">
+          <div class="portfolio-image">
+            <img src="./img/Rectangle 23.png" alt="Portfolio 3" />
+          </div>
+          <div class="portfolio-text">
+            <dl>
+              <dt>작업한 페이지 이름 3</dt>
               <dd>
                 사이트 설명<br />
                 간단히 1~2줄
@@ -99,7 +141,95 @@
             </dl>
             <dl>
               <dt>사용툴</dt>
-              <dd>Photoshop, Visual Studio Code</dd>
+              <!-- <dd>Illustrator, Photoshop</dd> -->
+            </dl>
+          </div>
+        </div>
+      </div>
+
+      <!-- Portfolio Content 4 -->
+      <div class="portfolio-content" data-content="4">
+        <div class="content-item">
+          <div class="portfolio-image">
+            <img src="./img/Rectangle 22.png" alt="Portfolio 4" />
+          </div>
+          <div class="portfolio-text">
+            <dl>
+              <dt>작업한 페이지 이름 4</dt>
+              <dd>
+                사이트 설명<br />
+                간단히 1~2줄
+              </dd>
+            </dl>
+            <dl>
+              <dt>사용툴</dt>
+              <!-- <dd>Figma, JavaScript</dd> -->
+            </dl>
+          </div>
+        </div>
+      </div>
+
+      <!-- Portfolio Content 5 -->
+      <div class="portfolio-content" data-content="5">
+        <div class="content-item">
+          <div class="portfolio-image">
+            <img src="./img/Rectangle 21.png" alt="Portfolio 5" />
+          </div>
+          <div class="portfolio-text">
+            <dl>
+              <dt>작업한 페이지 이름 5</dt>
+              <dd>
+                사이트 설명<br />
+                간단히 1~2줄
+              </dd>
+            </dl>
+            <dl>
+              <dt>사용툴</dt>
+              <!-- <dd>Adobe XD, CSS</dd> -->
+            </dl>
+          </div>
+        </div>
+      </div>
+
+      <!-- Portfolio Content 6 -->
+      <div class="portfolio-content" data-content="6">
+        <div class="content-item">
+          <div class="portfolio-image">
+            <img src="./img/Rectangle 18.png" alt="Portfolio 5" />
+          </div>
+          <div class="portfolio-text">
+            <dl>
+              <dt>작업한 페이지 이름 6</dt>
+              <dd>
+                사이트 설명<br />
+                간단히 1~2줄
+              </dd>
+            </dl>
+            <dl>
+              <dt>사용툴</dt>
+              <!-- <dd>Sketch, HTML5</dd> -->
+            </dl>
+          </div>
+        </div>
+      </div>
+
+      <!-- Portfolio Content 7 -->
+      <div class="portfolio-content" data-content="7">
+        <div class="content-item">
+          <div class="portfolio-image">
+            <img src="./img/portfolio-7.png" alt="Portfolio 7" />
+          </div>
+          <div class="portfolio-text">
+            <dl>
+              <dt>작업한 페이지 이름 7</dt>
+              <dd>
+                사이트 설명<br />
+                간단히 1~2줄
+              </dd>
+            </dl>
+            <dl>
+              <dt>사용툴</dt>
+              <!-- <dd>Figma, React</dd> -->
             </dl>
           </div>
         </div>
@@ -109,15 +239,48 @@
     <!-- section.design>h1+fig>img*4 -->
     <section class="design" id="design">
       <h1>Design</h1>
-      <div class="design-img">
-        <figure>
-          <img src="./img/banner_01.png" alt="" />
-          <img src="./img/banner_01.png" alt="" />
-          <img src="./img/banner_01.png" alt="" />
-          <img src="./img/banner_01.png" alt="" />
-          <img src="./img/banner_01.png" alt="" />
-        </figure>
+
+      <div class="design-slider-container">
+        <!-- 이전 버튼 -->
+        <button class="slider-btn prev-btn">
+          <span>&#8249;</span>
+        </button>
+
+        <!-- 슬라이더 영역 -->
+        <div class="design-img">
+          <figure class="design-slider">
+            <div class="slide-item">
+              <img src="./img/banner_01.png" alt="Design 1" />
+            </div>
+            <div class="slide-item">
+              <img src="./img/Rectangle 23.png" alt="Design 2" />
+            </div>
+            <div class="slide-item">
+              <img src="./img/Rectangle 22.png" alt="Design 3" />
+            </div>
+            <div class="slide-item">
+              <img src="./img/Rectangle 21.png" alt="Design 4" />
+            </div>
+            <div class="slide-item">
+              <img src="./img/Rectangle 19.png" alt="Design 5" />
+            </div>
+            <div class="slide-item">
+              <img src="./img/Rectangle 18.png" alt="Design 6" />
+            </div>
+            <div class="slide-item">
+              <img src="./img/banner_01.png" alt="Design 7" />
+            </div>
+          </figure>
+        </div>
+
+        <!-- 다음 버튼 -->
+        <button class="slider-btn next-btn">
+          <span>&#8250;</span>
+        </button>
       </div>
+
+      <!-- 슬라이드 인디케이터 -->
+      <div class="slider-dots"></div>
     </section>
 
     <section class="contact" id="contact">

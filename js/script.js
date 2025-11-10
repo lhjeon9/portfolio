@@ -16,6 +16,13 @@ $(document).ready(function () {
     } else {
       $(".scroll-down").removeClass("hidden");
     }
+
+    // Top 버튼 표시/숨김
+    if (scroll > 300) {
+      $(".top-btn").addClass("show");
+    } else {
+      $(".top-btn").removeClass("show");
+    }
   });
 
   // GNB 링크 클릭 이벤트 - 부드러운 스크롤
@@ -31,6 +38,16 @@ $(document).ready(function () {
       },
       800
     ); // 800ms 동안 부드럽게 스크롤
+  });
+
+  // ====== Top 버튼 클릭 이벤트 ======
+  $(".top-btn").click(function () {
+    $("html, body").animate(
+      {
+        scrollTop: 0,
+      },
+      800
+    );
   });
 
   // 포트폴리오 섹션 탭메뉴

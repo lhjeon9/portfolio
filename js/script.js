@@ -10,8 +10,8 @@ $(document).ready(function () {
       $(".gnb-fixed").removeClass("scrolled");
     }
 
-    // 스크롤 다운 표시 숨김 처리 (50px 이상 스크롤 시)
-    if (scroll > 300) {
+    // 스크롤 다운 표시 숨김 처리 (300px 이상 스크롤 시)
+    if (scroll > 150) {
       $(".scroll-down").addClass("hidden");
     } else {
       $(".scroll-down").removeClass("hidden");
@@ -36,7 +36,7 @@ $(document).ready(function () {
       {
         scrollTop: targetOffset,
       },
-      800
+      0.8
     ); // 800ms 동안 부드럽게 스크롤
   });
 
@@ -46,7 +46,7 @@ $(document).ready(function () {
       {
         scrollTop: 0,
       },
-      800
+      0.8
     );
   });
 

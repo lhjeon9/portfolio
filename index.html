@@ -9,6 +9,7 @@
 
     <script src="./js/jquery-3.7.1.min.js"></script>
     <script src="./js/script.js"></script>
+    <!-- <script src="./js/script-ver.01.js"></script> -->
   </head>
   <body>
     <!-- 고정 GNB -->
@@ -302,11 +303,6 @@
       <h1>Design</h1>
 
       <div class="design-slider-container">
-        <!-- 이전 버튼 -->
-        <button class="slider-btn prev-btn">
-          <span>&#8249;</span>
-        </button>
-
         <!-- 슬라이더 영역 -->
         <div class="design-img">
           <figure class="design-slider">
@@ -333,15 +329,20 @@
             </div>
           </figure>
         </div>
+      </div>
 
-        <!-- 다음 버튼 -->
+      <!-- 슬라이드 컨트롤(왼쪽 버튼 / dots / 오른쪽 버튼) -->
+      <div class="slider-controls">
+        <button class="slider-btn prev-btn">
+          <span>&#8249;</span>
+        </button>
+
+        <div class="slider-dots"></div>
+
         <button class="slider-btn next-btn">
           <span>&#8250;</span>
         </button>
       </div>
-
-      <!-- 슬라이드 인디케이터 -->
-      <div class="slider-dots"></div>
     </section>
 
     <section class="contact" id="contact">
